@@ -57,5 +57,5 @@ Click on an API endpoint for more detailed information.
 
 #### Uploads Resources
 
-- GET /uploads/new
-- POST /uploads
+- [**`GET` /uploads/new**](https://github.com/revolution-messaging/revere-personify-api/blob/master/api_endpoints/GET_uploads_new.md)
+- [**`POST` /uploads**](https://github.com/revolution-messaging/revere-personify-api/blob/master/api_endpoints/POST_uploads.md)

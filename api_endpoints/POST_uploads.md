@@ -32,7 +32,7 @@ An `upload` object with the following attributes:
 - **status** [String] &mdash; File status of the upload.
 - **file_name** [String] &mdash; File name of the upload.
 
-For more information on uploading files directly to Amazon S3 check out the file uploads section in the main Revere Personify API docs.
+For more information on uploading files directly to Amazon S3 check out the [file uploads section](https://github.com/revolution-messaging/revere-personify-api/blob/master/README.md#file-uploads) of the main Revere Personify API docs.
 
 ***
 

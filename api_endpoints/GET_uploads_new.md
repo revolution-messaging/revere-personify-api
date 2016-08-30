@@ -29,7 +29,7 @@ Both a URL and fields object with the following attributes:
 - **url** [String] &mdash; Amazon S3 bucket URL the file will be uploaded to.
 - **fields** [Object] &mdash; List of key/value pairs that must be sent with the file upload request.
 
-For more information on uploading files directly to Amazon S3 check out the file uploads section in the main Revere Personify API docs.
+For more information on uploading files directly to Amazon S3 check out the [file uploads section](https://github.com/revolution-messaging/revere-personify-api/blob/master/README.md#file-uploads) of the main Revere Personify API docs.
 
 ***
 

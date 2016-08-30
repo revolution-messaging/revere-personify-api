@@ -51,7 +51,7 @@ GET /uploads/new
 
 ```json
 {
-  "url": "https://revere-personify-development.s3.amazonaws.com",
+  "url": "https://revere-personify.s3.amazonaws.com",
   "fields": {
     "key": "uploads/1e5c83b22223ab2a9848b01833129916/2016/1472570946.3263416.csv",
     "success_action_status": "201",

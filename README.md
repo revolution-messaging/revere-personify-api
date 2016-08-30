@@ -84,7 +84,7 @@ Make a request to the `/uploads/new` endpoint to retrieve a URL and security cre
 Upload the file to the URL from the `/uploads/new` endpoint. When constructing the request make sure to send the `fields` key/value pairs along with the file to be uploaded. The file field needs to use the `file` param name. Below is an example of using CURL for the file upload.
 
 ```
-curl -X "POST" "https://revere-personify-development.s3.amazonaws.com/" \
+curl -X "POST" "https://revere-personify.s3.amazonaws.com/" \
   -H "Content-Type: multipart/form-data; charset=utf-8;" \
   -F "policy=eyJleHBpcmF0aW9uIjoiMjAxNi0wOC0zMFQxODowNDowNVoiLCJjb25kaXRpb25zIjpbeyJidWNrZXQiOiJyZXZlcmUtcGVyc29uaWZ5LWRldmVsb3BtZW50In0seyJrZXkiOiJ1cGxvYWRzL2JlNjFlYzQwYmNiNzUxNDljZWE3ODJlZjZlMDE1MzJhLzIwMTYvMTQ3MjU3NjY0NTAwMC5jc3YifSx7InN1Y2Nlc3NfYWN0aW9uX3N0YXR1cyI6IjIwMSJ9LHsiYWNsIjoicHVibGljLXJlYWQifSx7IngtYW16LWNyZWRlbnRpYWwiOiJBS0lBSVI1UERSVUJSWjdYVjIyUS8yMDE2MDgzMC91cy1lYXN0LTEvczMvYXdzNF9yZXF1ZXN0In0seyJ4LWFtei1hbGdvcml0aG0iOiJBV1M0LUhNQUMtU0hBMjU2In0seyJ4LWFtei1kYXRlIjoiMjAxNjA4MzBUMTcwNDA1WiJ9XX0=" \
   -F "x-amz-signature=2562e9f2fb825cb7685d2d969d8bbd753deb11fec0425ea3b75f0d9474dc24b3" \
@@ -109,7 +109,7 @@ Upon a successful file upload to Amazon, you'll get an XML response that looks l
 
 ```xml
 <PostResponse>
-  <Location>https://revere-personify-development.s3.amazonaws.com/uploads%2Fbe61ec40bcb75149cea782ef6e01532a%2F2016%2F1472576645000.csv</Location>
+  <Location>https://revere-personify.s3.amazonaws.com/uploads%2Fbe61ec40bcb75149cea782ef6e01532a%2F2016%2F1472576645000.csv</Location>
   <Bucket>revere-personify-development</Bucket>
   <Key>uploads/be61ec40bcb75149cea782ef6e01532a/2016/1472576645000.csv</Key>
   <ETag>"6cb34290b4cc5bd37ccfe895f02587ce"</ETag>

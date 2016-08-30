@@ -53,6 +53,8 @@ https://stagingpersonify.reverehq.com/api
 
 ## API Endpoints
 
+Click on an API endpoint for more detailed information.
+
 #### Uploads Resources
 
 - GET /uploads/new

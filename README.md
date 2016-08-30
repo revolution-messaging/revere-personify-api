@@ -83,7 +83,7 @@ Make a request to the `/uploads/new` endpoint to retrieve a URL and security cre
 
 Upload the file to the URL from the `/uploads/new` endpoint. When constructing the request make sure to send the `fields` key/value pairs along with the file to be uploaded. The file field needs to use the `file` param name. Below is an example of using CURL for the file upload.
 
-```
+```shell
 curl -X "POST" "https://revere-personify.s3.amazonaws.com/" \
   -H "Content-Type: multipart/form-data; charset=utf-8;" \
   -F "policy=eyJleHBpcmF0aW9uIjoiMjAxNi0wOC0zMFQxODowNDowNVoiLCJjb25kaXRpb25zIjpbeyJidWNrZXQiOiJyZXZlcmUtcGVyc29uaWZ5LWRldmVsb3BtZW50In0seyJrZXkiOiJ1cGxvYWRzL2JlNjFlYzQwYmNiNzUxNDljZWE3ODJlZjZlMDE1MzJhLzIwMTYvMTQ3MjU3NjY0NTAwMC5jc3YifSx7InN1Y2Nlc3NfYWN0aW9uX3N0YXR1cyI6IjIwMSJ9LHsiYWNsIjoicHVibGljLXJlYWQifSx7IngtYW16LWNyZWRlbnRpYWwiOiJBS0lBSVI1UERSVUJSWjdYVjIyUS8yMDE2MDgzMC91cy1lYXN0LTEvczMvYXdzNF9yZXF1ZXN0In0seyJ4LWFtei1hbGdvcml0aG0iOiJBV1M0LUhNQUMtU0hBMjU2In0seyJ4LWFtei1kYXRlIjoiMjAxNjA4MzBUMTcwNDA1WiJ9XX0=" \

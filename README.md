@@ -59,7 +59,6 @@ Click on an API endpoint for more detailed information.
 #### Uploads Resources
 
 - [**`GET` /uploads/new**](https://github.com/revolution-messaging/revere-personify-api/blob/master/api_endpoints/GET_uploads_new.md)
-- [**`POST` /uploads**](https://github.com/revolution-messaging/revere-personify-api/blob/master/api_endpoints/POST_uploads.md)
 
 ***
 
@@ -73,7 +72,7 @@ A pre-signed URL is Amazon's way to allow direct file uploads to S3 from any ori
 
 #### How do I use uploads with Revere Personify?
 
-Uploading files to Revere Personify is a three step process. It's important to understand each process to ensure your uploads are successfully stored to Amazon and reported to Revere Personify.
+Uploading files to Revere Personify is a two step process. It's important to understand each process to ensure your uploads are successfully stored to Amazon and reported to Revere Personify.
 
 **Step 1 &mdash; Request the URL and fields**
 
@@ -102,18 +101,3 @@ fe4b7424-1785-44a2-94ee-76a5fe746d0c,+7306827348,Layne,Smitham,II,raymundo@kutch
   -F "x-amz-credential=AKIAIR5PDRUBRZ7XV22Q/20160830/us-east-1/s3/aws4_request" \
   -F "x-amz-date=20160830T170405Z"
 ```
-
-**Step 3 &mdash; Create the upload**
-
-Upon a successful file upload to Amazon, you'll get an XML response that looks like the following:
-
-```xml
-<PostResponse>
-  <Location>https://revere-personify.s3.amazonaws.com/uploads%2Fbe61ec40bcb75149cea782ef6e01532a%2F2016%2F1472576645000.csv</Location>
-  <Bucket>revere-personify-development</Bucket>
-  <Key>uploads/be61ec40bcb75149cea782ef6e01532a/2016/1472576645000.csv</Key>
-  <ETag>"6cb34290b4cc5bd37ccfe895f02587ce"</ETag>
-</PostResponse>
-```
-
-Use the value of the `<Key>` to send the correct `file_name` to Revere Personify using the `POST /uploads` endpoint. If you do not send the value exactly as it is returned from Amazon, the file will not be parsed and processed.

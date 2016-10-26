@@ -47,7 +47,7 @@ None
 GET /uploads/new
 ```
 
-**Response** (application/json)
+**Response** 201 (application/json)
 
 ```json
 {
